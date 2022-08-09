@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header
+{
+   min-height: 100vh;
+   width:100%;
+   background-image: url(img/ok.jpg);
+   background-position:centre;
+   background-size: cover;
+   position:relative;
+}
+
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items: center;
+}
+nav img{
+    width:80px;
+    align-content: left;
+    
+}
+.nav-link
+{
+    
+    flex:1; /* to occupy space between the bar we are going to cretae*/
+    text-align:right; /* to make nav link on widgets to be align on right side properly*/
+}
+.nav-link ul li{
+    list-style: none; /* to make bullets appearing disapper*/
+    display: inline-block;/*to make block within website for navigation block*/
+     padding:4px 4px;
+     position: relative;
+}
+.nav-link ul li a{
+    color:#fff; /* to make navlink class ul list li listitem having anchor tag color white*/
+    text-decoration: none; /*to make navlink class ul list li listitem text decoration none mean color blue will be gone*/
+    font-size: 16px;
+   align-items: right;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-link ul li::after
+{
+    content:'';
+    width:0%;
+    height:2px;
+    background:rgb(73, 73, 244);
+    display:block;
+    margin:auto;
+    transition: 0.3ms;
+}
+.nav-link ul li:hover::after
+{
+    width:100%; /* first hover will be done meaning that first we will know that py placing or taking mouse on that elelmrnt
+    width will be changes to 100 from 0 % of after*/
+}
+.heading
+{
+    width: 90%;/* it will be good to have horizontal line*/
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    
+}
+.heading h1{
+    font-size: 50px;
+}
+.heading p{
+    font-size: 20px;
+    margin :10px 0 0 40px;
+}
+.heading p a{
+    font-size: 20px;
+    margin :10px 0 0 40px;
+    text-decoration: none;
+    color:rgb(217, 241, 210);
+    transform:translate(-50%,-50%);
+}
+.headingbtn
+{
+    display: inline-block;
+    color: rgb(217, 241, 210);
+    border:1px solid #fff;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+    padding:10px 12px;
+}
+.headingbtn:hover
+{
+   border: 2px solid aqua;
+   background: transparent;
+   transition:5ms;
+   color: aqua;
+  
+}
+nav .fa
+{
+    display: none;
+}
+@media(max-width:750px)
+/*This media keyword will be used for smaller screens like phones code about text and elements we are going to write here by reducing size*/
+{
+    .heading h1{
+        font-size: 25px;
+    }
+    .heading p{
+        font-size: 13px;
+        margin :10px 0 0 40px;
+    }
+    .heading p a{
+        font-size: 13px;
+        margin :10px 50px 50px 40px;
+        text-decoration: none;
+        color:rgb(217, 241, 210);
+        
+    }
+    .nav-link ul li{
+      display:block;
+      
+    }
+    .nav-link
+    {
+        
+        position: absolute;
+        background:rgb(73, 73, 244);
+        border:2px transparent;
+        height:25vh;
+        width:150px;
+        top:0;
+        right:0;
+        text-align:left;
+        z-index: 2;
+    }
+    nav .fa{
+        display:block;
+        color:rgb(191, 10, 10);
+        margin:10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+
+/* Heading 2
+ */
+ .heading2
+{
+    width: 90%;/* it will be good to have horizontal line*/
+    color: #fff;
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    
+}
+.heading2 h5{
+    font-size: 50px;
+}
+.heading2 span{
+    font-size: 20px;
+    margin :10px 0 0 40px;
+}
+.heading2 span a{
+    font-size: 20px;
+    
+    text-decoration: none;
+    color:rgb(217, 241, 210);
+   
+}
+.heading2 span a::after
+{
+    content:'';
+    width:0%;
+    height:2px;
+    background:rgb(244, 198, 73);
+    display:inline-block;
+
+    margin:auto;
+   
+    transition: 0.3ms;
+}
+.heading2 span a:hover::after
+{
+    width:0.5vh;
+    align-content: space-around;
+     /* first hover will be done meaning that first we will know that py placing or taking mouse on that elelmrnt
+    width will be changes to 100 from 0 % of after*/
+}
+
+
+/* Explore page stylesheet*/
+.exp
+{
+    
+        min-height: 100vh;
+        width:100%;
+      background-image: url(img/explorebg.png);
+        background-position:centre;
+        background-size: cover;
+        position:relative;
+      
+     
+}
+.headinge
+{
+    width: 95%;/* it will be good to have horizontal line*/
+    color: #fff;
+    position: absolute;
+    top:23%;
+    left:50%;
+   transform: translate(-50%,-50%);
+  font-size: 50px;
+    text-align:center;
+    font-size: 50px;
+}
+
+.row1
+{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display:flex;
+    justify-content:space-between;
+}
+.row
+{
+    margin-top: 8%;;
+    margin-left: 3%;
+    margin-right: 3%;
+    display:flex;
+    justify-content:space-between;
+}
+.course-col
+{
+    flex:31%;
+    background:#fff3f3;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    padding: 11px 9px;
+    box-sizing: border-box;
+}
+.course-col:hover
+{
+    background: aqua;
+    padding: 9px 7px;
+    box-sizing: border-box;
+}
+
+
+
+/* About Section is going to start */
+.killo
+{
+    
+}
+
+
